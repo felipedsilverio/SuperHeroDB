@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SuperHeroDB.Service.SuperHeroService" CodeBehind="SuperHeroService.svc.cs" %>

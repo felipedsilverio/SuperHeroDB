@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/service.js"></script>
+    <link href="Styles/styles.css" rel="stylesheet" />
+
+    <!--<script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet" />-->
+</head>
+<body>
+    <div id="menu">
+        <a href="javascript:showOverview()">Overview</a>
+        <a href="javascript:showAdd()">Add</a>
+        <a href="javascript:showBattlefield()">Fight</a>
+        <input id="searchText" type="text" placeholder="Search Text" />
+        <button onclick="searchHero()">Search</button>
+    </div>
+    <div id="heroOverview">
+        <table>
+            <thead>
+                <tr>
+                    <td><a href="javascript:sortedHeroList('firstname')">Firstname</a></td>
+                    <td><a href="javascript:sortedHeroList('lastname')">Lastname</a></td>
+                    <td><a href="javascript:sortedHeroList('hero')">Hero Name</a></td>
+                    <td><a href="javascript:sortedHeroList('birthplace')">Place of Birth</a></td>
+                    <td><a href="javascript:sortedHeroList('combat')">Combat Points</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+    <div id="addHeroForm" style="display:none;">
+        <input type="text" placeholder="Firstname" id="addFirstname" /><br />
+        <input type="text" placeholder="Lastname" id="addLastname" /><br />
+        <input type="text" placeholder="Hero name" id="addHeroname" /><br />
+        <input type="text" placeholder="Place of birth" id="addPlaceOfBirth" /><br />
+        <input type="text" placeholder="Combat points" id="addCombatPoints" /><br />
+        <button onclick="addHero()">Add</button>
+    </div>
+    <div id="updateHeroForm" style="display:none;">
+        <input type="text" placeholder="Firstname" id="updateFirstname" /><br />
+        <input type="text" placeholder="Lastname" id="updateLastname" /><br />
+        <input type="text" placeholder="Hero name" id="updateHeroname" /><br />
+        <input type="text" placeholder="Place of birth" id="updatePlaceOfBirth" /><br />
+        <input type="text" placeholder="Combat points" id="updateCombatPoints" /><br />
+        <button onclick="putHero()">Update</button><br />
+    </div>
+    <div id="battlefield" style="display:none;">
+        <div id="fighterSelection"></div>
+        <button onclick="fight(); return false;">Fight!</button>
+        <div id="fightResult"></div>
+    </div>
+</body>
+</html>

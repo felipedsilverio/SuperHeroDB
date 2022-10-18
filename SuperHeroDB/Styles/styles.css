@@ -1,0 +1,30 @@
+﻿body {
+    font-family: OpenSans-Regular;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+    table td, table th {
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+thead {
+    font-weight: 600;
+    font-style: italic;
+}
+
+input[type="text"] {
+    margin: 5px;
+    height: 14px;
+    padding: 4px;
+}
+
+select {
+    margin: 5px;
+    height: 26px;
+    padding: 4px;
+}
